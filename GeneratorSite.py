@@ -69,12 +69,12 @@ def femaleName():
     return(startHere(NameFunction.NameFunc('f')))
 
 @app.route("/hometown")
-def maleName():
+def homeTown():
     return(startHere(TownFunction.TownFunc()))
 
 @app.route("/organization")
 def organization():
-    return(startHere(TownFunction.TownFunc()))
+    return(startHere(OrgFunction.OrgFunc()))
 
 
 
