@@ -18,10 +18,6 @@ global random
 
 @app.route('/')
 def startHere(result=""):
-#    mName = NameFunction.NameFunc('m')
-#    fName = NameFunction.NameFunc('f')
-#    organization = OrgFunction.OrgFunc()
-#    town = TownFunction.TownFunc()
 
     
     html = '''<html>
@@ -29,7 +25,8 @@ def startHere(result=""):
 <head>
 <title>Mike's Random Generators</title>
 <style type="text/css">
-.genButton{background-color: Aquamarine; height: 30px; width: 100px;float:left;margin:0px auto;text-align:center}
+.genButton{background-color: #4fa76a; height: 30px; width: 100px;float:left;margin:0px auto;text-align:center;text-decoration: none;color:black;}
+.genButton:hover{background-color:#23663b}
 </style>
 </head>
 
@@ -38,24 +35,16 @@ def startHere(result=""):
 
 <div id="container" style="width:100%;min-width:500px">
 
-<div id="heading" style="background-color:Aquamarine">
+<div id="heading" style="background-color:#4fa76a">
 	<h1 style="margin:0px auto;text-align:center">Mike's Random Generators</h1>
 </div>
 
 <div id="buttonBar" style="width:100px;float:left">
 	
-	<a href="/malename">
-		<div class="genButton">Male Name</div>
-	</a>
-	<a href="/femalename">
-		<div class="genButton">Female Name</div>
-	</a>
-	<a href="/hometown">
-		<div class="genButton">Hometown</div>
-	</a>
-	<a href="/organization">
-		<div class="genButton">Organization</div>
-	</a>
+	<a class="genButton" href="/malename">Male Name</a>
+	<a class="genButton" href="/femalename">Female Name</a>
+	<a class="genButton" href="/hometown">Hometown</a>
+	<a class="genButton" href="/organization">Organization</a>
 </div>
 
 <div id="resultsArea" style="width:80%;min-width:100px;float:left">
