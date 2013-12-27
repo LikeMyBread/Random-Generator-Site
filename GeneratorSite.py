@@ -8,11 +8,13 @@ app.debug = True #Makes flask automaticaly update every time the file is saved
 import NameFunction
 import OrgFunction
 import TownFunction
+import PersonalityFunction
 import random
 
 global NameFunction
 global OrgFunction
 global TownFunction
+global PersonalityFunction
 global random
 
 
@@ -45,6 +47,7 @@ def startHere(result=""):
 	<a class="genButton" href="/femalename">Female Name</a>
 	<a class="genButton" href="/hometown">Hometown</a>
 	<a class="genButton" href="/organization">Organization</a>
+	<a class="genButton" href="/personality">Personality</a>
 </div>
 
 <div id="resultsArea" style="width:80%;min-width:100px;float:left">
@@ -75,6 +78,10 @@ def homeTown():
 @app.route("/organization")
 def organization():
     return(startHere(OrgFunction.OrgFunc()))
+
+@app.route("/personality")
+def organization():
+    return(startHere(str(PersonalityFunction.PersFunc(5))))
 
 
 
