@@ -10,21 +10,21 @@ __location__ = os.path.dirname(os.path.abspath(sys.argv[0]))
 
 
 
-f = open(os.path.join(__location__, 'FemaleNames.csv'),'rU')
+f = open(os.path.join(__location__, 'data/FemaleNames.csv'),'rU')
 reader = csv.reader(f)
 fNames = []
 for line in reader:
 	fNames.append(line)
 f.close()
 
-f = open(os.path.join(__location__, 'MaleNames.csv'),'rU')
+f = open(os.path.join(__location__, 'data/MaleNames.csv'),'rU')
 reader = csv.reader(f)
 mNames = []
 for line in reader:
 	mNames.append(line)
 f.close()
 
-f = open(os.path.join(__location__, 'LastNames.csv'),'rU')
+f = open(os.path.join(__location__, 'data/LastNames.csv'),'rU')
 reader = csv.reader(f)
 lNames = []
 for line in reader:

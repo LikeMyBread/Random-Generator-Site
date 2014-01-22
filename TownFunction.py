@@ -9,7 +9,7 @@ __location__ = os.path.dirname(os.path.abspath(sys.argv[0]))
 
 
 
-f = open(os.path.join(__location__, 'Towns.csv'),'rU')
+f = open(os.path.join(__location__, 'data/Towns.csv'),'rU')
 reader = csv.reader(f)
 towns = []
 for line in reader:

@@ -9,28 +9,28 @@ __location__ = os.path.dirname(os.path.abspath(sys.argv[0]))
 
 
 
-f = open(os.path.join(__location__, 'Nouns.csv'),'rU')
+f = open(os.path.join(__location__, 'data/Nouns.csv'),'rU')
 reader = csv.reader(f)
 nouns = []
 for line in reader:
 	nouns.append(line)
 f.close()
 
-f = open(os.path.join(__location__, 'Causes.csv'),'rU')
+f = open(os.path.join(__location__, 'data/Causes.csv'),'rU')
 reader = csv.reader(f)
 causes = []
 for line in reader:
 	causes.append(line)
 f.close()
 
-f = open(os.path.join(__location__, 'Stances.csv'),'rU')
+f = open(os.path.join(__location__, 'data/Stances.csv'),'rU')
 reader = csv.reader(f)
 stances = []
 for line in reader:
 	stances.append(line)
 f.close()
 
-f = open(os.path.join(__location__, 'Firsts.csv'),'rU')
+f = open(os.path.join(__location__, 'data/Firsts.csv'),'rU')
 reader = csv.reader(f)
 firsts = []
 for line in reader:
